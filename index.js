@@ -14,12 +14,6 @@ for (item of buttons) {
             screenValue = "";
             screen.value = screenValue;
         }
-        else if(this.id=="CE"){
-			var output=reverseNumberFormat(buttonText).toString();
-			if(output){//if output has a value
-				output= output.substr(0,output.length-1);
-			}
-		}
         else if (buttonText == '=') {
             screen.value = eval(screenValue);
         }
